@@ -14,6 +14,10 @@
 		16C1B501235F9DC700BF3AC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C1B500235F9DC700BF3AC6 /* Preview Assets.xcassets */; };
 		16C1B504235F9DC700BF3AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C1B502235F9DC700BF3AC6 /* LaunchScreen.storyboard */; };
 		16C1B50F235F9DC800BF3AC6 /* MarvelCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B50E235F9DC800BF3AC6 /* MarvelCharactersTests.swift */; };
+		16C1B51D2360CD9500BF3AC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */; };
+		16C1B51E2360CD9500BF3AC6 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16C1B51F2360CD9500BF3AC6 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; };
+		16C1B5202360CD9500BF3AC6 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,21 @@
 			remoteInfo = MarvelCharacters;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16C1B5212360CD9500BF3AC6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16C1B51E2360CD9500BF3AC6 /* RxSwift.framework in Embed Frameworks */,
+				16C1B5202360CD9500BF3AC6 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		16C1B4F4235F9DC400BF3AC6 /* MarvelCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +57,8 @@
 		16C1B50A235F9DC800BF3AC6 /* MarvelCharactersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelCharactersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C1B50E235F9DC800BF3AC6 /* MarvelCharactersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharactersTests.swift; sourceTree = "<group>"; };
 		16C1B510235F9DC800BF3AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C1B51D2360CD9500BF3AC6 /* RxSwift.framework in Frameworks */,
+				16C1B51F2360CD9500BF3AC6 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +87,7 @@
 				16C1B4F6235F9DC400BF3AC6 /* MarvelCharacters */,
 				16C1B50D235F9DC800BF3AC6 /* MarvelCharactersTests */,
 				16C1B4F5235F9DC400BF3AC6 /* Products */,
+				16C1B51A2360CD9500BF3AC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +131,15 @@
 			path = MarvelCharactersTests;
 			sourceTree = "<group>";
 		};
+		16C1B51A2360CD9500BF3AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */,
+				16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +150,8 @@
 				16C1B4F0235F9DC400BF3AC6 /* Sources */,
 				16C1B4F1235F9DC400BF3AC6 /* Frameworks */,
 				16C1B4F2235F9DC400BF3AC6 /* Resources */,
+				16C1B5212360CD9500BF3AC6 /* Embed Frameworks */,
+				16C1B5192360C27F00BF3AC6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,13 +238,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16C1B5192360C27F00BF3AC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16C1B4F0235F9DC400BF3AC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				16C1B4F8235F9DC400BF3AC6 /* AppDelegate.swift in Sources */,
-				16C1B4FA235F9DC400BF3AC6 /* SceneDelegate.swift in Sources */,
 				16C1B4FC235F9DC400BF3AC6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,19 +418,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MarvelCharacters/Preview Content\"";
 				DEVELOPMENT_TEAM = 22SPKR75FE;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MarvelCharacters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MarvelCharacters;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarvelChars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,19 +444,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MarvelCharacters/Preview Content\"";
 				DEVELOPMENT_TEAM = 22SPKR75FE;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MarvelCharacters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MarvelCharacters;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarvelChars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
