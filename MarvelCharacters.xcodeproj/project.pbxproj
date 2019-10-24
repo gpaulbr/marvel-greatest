@@ -17,6 +17,12 @@
 		16C1B5202360CD9500BF3AC6 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16C1B5242360D31200BF3AC6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5232360D31200BF3AC6 /* Coordinator.swift */; };
 		16C1B5262360D32C00BF3AC6 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5252360D32C00BF3AC6 /* Navigator.swift */; };
+		16C1B5292360DF6A00BF3AC6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5282360DF6A00BF3AC6 /* AppCoordinator.swift */; };
+		16C1B52C2360DFB900BF3AC6 /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B52B2360DFB900BF3AC6 /* AppRootViewController.swift */; };
+		16C1B52E2360E73100BF3AC6 /* CharactersListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B52D2360E73100BF3AC6 /* CharactersListCoordinator.swift */; };
+		16C1B5312360E99500BF3AC6 /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5302360E99500BF3AC6 /* CharactersListViewController.swift */; };
+		16C1B5332360E9A000BF3AC6 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5322360E9A000BF3AC6 /* CharactersListView.swift */; };
+		16C1B5352360E9AB00BF3AC6 /* CharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5342360E9AB00BF3AC6 /* CharactersListViewModel.swift */; };
 		16C1B5372360EA4B00BF3AC6 /* HasCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5362360EA4B00BF3AC6 /* HasCustomView.swift */; };
 		16C1B53A2360EB3700BF3AC6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5392360EB3700BF3AC6 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +65,12 @@
 		16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		16C1B5232360D31200BF3AC6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		16C1B5252360D32C00BF3AC6 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		16C1B5282360DF6A00BF3AC6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		16C1B52B2360DFB900BF3AC6 /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
+		16C1B52D2360E73100BF3AC6 /* CharactersListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListCoordinator.swift; sourceTree = "<group>"; };
+		16C1B5302360E99500BF3AC6 /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
+		16C1B5322360E9A000BF3AC6 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
+		16C1B5342360E9AB00BF3AC6 /* CharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModel.swift; sourceTree = "<group>"; };
 		16C1B5362360EA4B00BF3AC6 /* HasCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCustomView.swift; sourceTree = "<group>"; };
 		16C1B5392360EB3700BF3AC6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				16C1B5382360EB2100BF3AC6 /* Extensions */,
+				16C1B52A2360DFA100BF3AC6 /* Scenes */,
+				16C1B5272360DE2E00BF3AC6 /* Coordinators */,
 				16C1B5222360D30100BF3AC6 /* Source */,
 				16C1B4F7235F9DC400BF3AC6 /* AppDelegate.swift */,
 				16C1B4FD235F9DC700BF3AC6 /* Assets.xcassets */,
@@ -141,6 +155,34 @@
 				16C1B5362360EA4B00BF3AC6 /* HasCustomView.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		16C1B5272360DE2E00BF3AC6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				16C1B5282360DF6A00BF3AC6 /* AppCoordinator.swift */,
+				16C1B52D2360E73100BF3AC6 /* CharactersListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		16C1B52A2360DFA100BF3AC6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				16C1B52F2360E97400BF3AC6 /* Characters List */,
+				16C1B52B2360DFB900BF3AC6 /* AppRootViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		16C1B52F2360E97400BF3AC6 /* Characters List */ = {
+			isa = PBXGroup;
+			children = (
+				16C1B5322360E9A000BF3AC6 /* CharactersListView.swift */,
+				16C1B5302360E99500BF3AC6 /* CharactersListViewController.swift */,
+				16C1B5342360E9AB00BF3AC6 /* CharactersListViewModel.swift */,
+			);
+			path = "Characters List";
 			sourceTree = "<group>";
 		};
 		16C1B5382360EB2100BF3AC6 /* Extensions */ = {
@@ -276,10 +318,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				16C1B5372360EA4B00BF3AC6 /* HasCustomView.swift in Sources */,
+				16C1B5312360E99500BF3AC6 /* CharactersListViewController.swift in Sources */,
+				16C1B52C2360DFB900BF3AC6 /* AppRootViewController.swift in Sources */,
 				16C1B4F8235F9DC400BF3AC6 /* AppDelegate.swift in Sources */,
 				16C1B5262360D32C00BF3AC6 /* Navigator.swift in Sources */,
+				16C1B5352360E9AB00BF3AC6 /* CharactersListViewModel.swift in Sources */,
 				16C1B53A2360EB3700BF3AC6 /* UIView+Extensions.swift in Sources */,
+				16C1B5292360DF6A00BF3AC6 /* AppCoordinator.swift in Sources */,
+				16C1B5332360E9A000BF3AC6 /* CharactersListView.swift in Sources */,
 				16C1B5242360D31200BF3AC6 /* Coordinator.swift in Sources */,
+				16C1B52E2360E73100BF3AC6 /* CharactersListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MarvelCharacters/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 22SPKR75FE;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -459,7 +507,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MarvelCharacters/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 22SPKR75FE;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
