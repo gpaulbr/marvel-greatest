@@ -38,14 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		16C1B5212360CD9500BF3AC6 /* Embed Frameworks */ = {
+		16F7DD782368B6270030F726 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				16C1B51E2360CD9500BF3AC6 /* RxSwift.framework in Embed Frameworks */,
-				16C1B5202360CD9500BF3AC6 /* SnapKit.framework in Embed Frameworks */,
+				16F7DD772368B6270030F726 /* SnapKit.framework in Embed Frameworks */,
+				16F7DD752368B6270030F726 /* RxSwift.framework in Embed Frameworks */,
+				16F7DD732368B6270030F726 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,8 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16C1B51D2360CD9500BF3AC6 /* RxSwift.framework in Frameworks */,
-				16C1B51F2360CD9500BF3AC6 /* SnapKit.framework in Frameworks */,
+				16F7DD762368B6270030F726 /* SnapKit.framework in Frameworks */,
+				16F7DD742368B6270030F726 /* RxSwift.framework in Frameworks */,
+				16F7DD722368B6270030F726 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +143,7 @@
 		16C1B51A2360CD9500BF3AC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16F7DD6E2368802D0030F726 /* CryptoSwift.framework */,
 				16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */,
 				16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */,
 			);
@@ -203,8 +206,8 @@
 				16C1B4F0235F9DC400BF3AC6 /* Sources */,
 				16C1B4F1235F9DC400BF3AC6 /* Frameworks */,
 				16C1B4F2235F9DC400BF3AC6 /* Resources */,
-				16C1B5212360CD9500BF3AC6 /* Embed Frameworks */,
-				16C1B5192360C27F00BF3AC6 /* ShellScript */,
+				16F7DD712368B57D0030F726 /* ShellScript */,
+				16F7DD782368B6270030F726 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,7 +294,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16C1B5192360C27F00BF3AC6 /* ShellScript */ = {
+		16F7DD712368B57D0030F726 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,6 +304,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
 			outputFileListPaths = (
 			);
