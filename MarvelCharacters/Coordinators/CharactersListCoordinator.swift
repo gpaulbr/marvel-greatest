@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 final class CharactersListCoordinator: CoordinatorNavigable {
     
@@ -17,7 +18,8 @@ final class CharactersListCoordinator: CoordinatorNavigable {
     private let charactersListViewController: CharactersListViewController
     
     init() {
-        let charactersListViewController = CharactersListViewController()
+        let charactersListViewModel = CharactersListViewModel()
+        let charactersListViewController = CharactersListViewController(viewModel: charactersListViewModel)
         self.charactersListViewController = charactersListViewController
         
         let navigationController = UINavigationController(rootViewController: charactersListViewController)
