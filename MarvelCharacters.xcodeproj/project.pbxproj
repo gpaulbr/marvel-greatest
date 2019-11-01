@@ -13,10 +13,6 @@
 		16C1B4FE235F9DC700BF3AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C1B4FD235F9DC700BF3AC6 /* Assets.xcassets */; };
 		16C1B504235F9DC700BF3AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C1B502235F9DC700BF3AC6 /* LaunchScreen.storyboard */; };
 		16C1B50F235F9DC800BF3AC6 /* MarvelCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B50E235F9DC800BF3AC6 /* MarvelCharactersTests.swift */; };
-		16C1B51D2360CD9500BF3AC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */; };
-		16C1B51E2360CD9500BF3AC6 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		16C1B51F2360CD9500BF3AC6 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; };
-		16C1B5202360CD9500BF3AC6 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16C1B5242360D31200BF3AC6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5232360D31200BF3AC6 /* Coordinator.swift */; };
 		16C1B5262360D32C00BF3AC6 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5252360D32C00BF3AC6 /* Navigator.swift */; };
 		16C1B5292360DF6A00BF3AC6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5282360DF6A00BF3AC6 /* AppCoordinator.swift */; };
@@ -30,9 +26,17 @@
 		16C1B53C2362616600BF3AC6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B53B2362616600BF3AC6 /* NetworkRequest.swift */; };
 		16C1B53E23633F0600BF3AC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B53D23633F0600BF3AC6 /* APIRequest.swift */; };
 		16C1B54023633F1600BF3AC6 /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B53F23633F1600BF3AC6 /* APIResource.swift */; };
+		16F7DD722368B6270030F726 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F7DD6E2368802D0030F726 /* CryptoSwift.framework */; };
+		16F7DD732368B6270030F726 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16F7DD6E2368802D0030F726 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16F7DD742368B6270030F726 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */; };
+		16F7DD752368B6270030F726 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16F7DD762368B6270030F726 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; };
+		16F7DD772368B6270030F726 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16F7DD7C2369ED800030F726 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD7B2369ED800030F726 /* Character.swift */; };
 		16F7DD7E2369EDC60030F726 /* DataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD7D2369EDC60030F726 /* DataWrapper.swift */; };
 		16F7DD802369EDD30030F726 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD7F2369EDD30030F726 /* Wrapper.swift */; };
+		16F7DD822369FAC30030F726 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD812369FAC30030F726 /* CharacterTableViewCell.swift */; };
+		16F7DD842369FF820030F726 /* CharacterTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD832369FF820030F726 /* CharacterTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,9 +91,12 @@
 		16C1B53B2362616600BF3AC6 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		16C1B53D23633F0600BF3AC6 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		16C1B53F23633F1600BF3AC6 /* APIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
+		16F7DD6E2368802D0030F726 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		16F7DD7B2369ED800030F726 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		16F7DD7D2369EDC60030F726 /* DataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWrapper.swift; sourceTree = "<group>"; };
 		16F7DD7F2369EDD30030F726 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		16F7DD812369FAC30030F726 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		16F7DD832369FF820030F726 /* CharacterTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +142,10 @@
 		16C1B4F6235F9DC400BF3AC6 /* MarvelCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				16C1B5272360DE2E00BF3AC6 /* Coordinators */,
 				16C1B5382360EB2100BF3AC6 /* Extensions */,
 				16F7DD7A2369ED6C0030F726 /* Models */,
 				16C1B52A2360DFA100BF3AC6 /* Scenes */,
-				16C1B5272360DE2E00BF3AC6 /* Coordinators */,
 				16C1B5222360D30100BF3AC6 /* Source */,
 				16C1B4F7235F9DC400BF3AC6 /* AppDelegate.swift */,
 				16C1B4FD235F9DC700BF3AC6 /* Assets.xcassets */,
@@ -202,6 +209,7 @@
 		16C1B52F2360E97400BF3AC6 /* Characters List */ = {
 			isa = PBXGroup;
 			children = (
+				16F7DD792369ED370030F726 /* Character Cell */,
 				16C1B5322360E9A000BF3AC6 /* CharactersListView.swift */,
 				16C1B5302360E99500BF3AC6 /* CharactersListViewController.swift */,
 				16C1B5342360E9AB00BF3AC6 /* CharactersListViewModel.swift */,
@@ -215,6 +223,15 @@
 				16C1B5392360EB3700BF3AC6 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		16F7DD792369ED370030F726 /* Character Cell */ = {
+			isa = PBXGroup;
+			children = (
+				16F7DD812369FAC30030F726 /* CharacterTableViewCell.swift */,
+				16F7DD832369FF820030F726 /* CharacterTableViewCellViewModel.swift */,
+			);
+			path = "Character Cell";
 			sourceTree = "<group>";
 		};
 		16F7DD7A2369ED6C0030F726 /* Models */ = {
@@ -362,10 +379,12 @@
 				16C1B5262360D32C00BF3AC6 /* Navigator.swift in Sources */,
 				1694C77A236B683E006E6846 /* Image.swift in Sources */,
 				16F7DD7E2369EDC60030F726 /* DataWrapper.swift in Sources */,
+				16F7DD842369FF820030F726 /* CharacterTableViewCellViewModel.swift in Sources */,
 				1694C778236B667E006E6846 /* ImageRequest.swift in Sources */,
 				16C1B5352360E9AB00BF3AC6 /* CharactersListViewModel.swift in Sources */,
 				16F7DD802369EDD30030F726 /* Wrapper.swift in Sources */,
 				16C1B53A2360EB3700BF3AC6 /* UIView+Extensions.swift in Sources */,
+				16F7DD822369FAC30030F726 /* CharacterTableViewCell.swift in Sources */,
 				16C1B5292360DF6A00BF3AC6 /* AppCoordinator.swift in Sources */,
 				16C1B5332360E9A000BF3AC6 /* CharactersListView.swift in Sources */,
 				16C1B5242360D31200BF3AC6 /* Coordinator.swift in Sources */,

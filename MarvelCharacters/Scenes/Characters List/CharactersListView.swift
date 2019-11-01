@@ -7,13 +7,11 @@
 //
 
 import UIKit
+import SnapKit
 
 final class CharactersListView: UIView {
     
-    let usernameLabel = UILabel() {
-        $0.text = "Characters"
-        $0.textColor = #colorLiteral(red: 1, green: 0.5176470588, blue: 0.1490196078, alpha: 1)
-    }
+    let tableView = UITableView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,11 +22,13 @@ final class CharactersListView: UIView {
     }
     
     func render() {
-        addSubview(usernameLabel)
+        addSubview(tableView)
         
-        usernameLabel.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
+        tableView.snp.makeConstraints { make in
+            make.top.equalTo(self.snp.top)
+            make.bottom.equalTo(self.snp.bottom)
+            make.leading.equalTo(self.snp.leading)
+            make.trailing.equalTo(self.snp.trailing)
         }
     }
 }
