@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class CharacterTableViewCell: UITableViewCell {
     
@@ -20,6 +21,7 @@ class CharacterTableViewCell: UITableViewCell {
         $0.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0).cgColor
         $0.layer.cornerRadius = 10
         $0.clipsToBounds = true
+        $0.kf.indicatorType = .activity
     }
     private var characterNameLabel = UILabel() {
         $0.numberOfLines = 0
@@ -40,6 +42,10 @@ class CharacterTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("\(#file) \(#function) not implemented")
+    }
+
+    override func prepareForReuse() {
+        characterImageView.image = nil
     }
     
     private func render() {
@@ -71,11 +77,18 @@ class CharacterTableViewCell: UITableViewCell {
     }
     
     func configure(with viewModel: CharacterTableViewCellViewModelProtocol) {
-        self.viewModel = viewModel
-        if let data = viewModel.imageData {
-            characterImageView.image = UIImage(data: data)
+        
+        if let url = viewModel.imageUrl {
+            viewModel.imageDownloadCancellation.addObservation(for: characterImageView) { (characterImageView, cancel) in
+                            guard cancel else { return }
+                characterImageView.kf.cancelDownloadTask()
+            }
+            
+            characterImageView.kf.setImage(with: url)
         }
         characterNameLabel.text = viewModel.name
         characterDescriptionLabel.text = viewModel.description
+
+        self.viewModel = viewModel
     }
 }
