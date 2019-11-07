@@ -8,10 +8,9 @@
 
 import Foundation
 
-struct Character: Decodable {
+public struct Character: Decodable {
     let id: Int
     let name: String?
     let description: String?
     let thumbnail: Image?
-    var imageData: Data?
 }

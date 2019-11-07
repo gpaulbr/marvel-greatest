@@ -41,11 +41,12 @@ final class CharactersListViewController: UIViewController, HasCustomView {
         
         customView.render()
         
+        tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 50
         tableView.register(CharacterTableViewCell.self, forCellReuseIdentifier: CharacterTableViewCell.reuseIdentifier)
-        viewModel.fetchQuestion()
+        viewModel.fetchCharacters()
     }
 
 }
@@ -72,6 +73,16 @@ extension CharactersListViewController: UITableViewDataSource {
         
         return cell
     }
+}
+
+extension CharactersListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        delegate?.heroesList(self, didClick: viewModel.hero(for: indexPath))
+    }
     
-    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (indexPath.row + 1) == tableView.numberOfRows(inSection: 0) {
+            viewModel.fetchCharacters()
+        }
+    }
 }
