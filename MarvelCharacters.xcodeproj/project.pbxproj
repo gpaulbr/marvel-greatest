@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1694C778236B667E006E6846 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694C777236B667E006E6846 /* ImageRequest.swift */; };
+		1681FB662370B24200D7781B /* GetHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A60192237057EA0071F0F2 /* GetHeroes.swift */; };
+		1681FB682370B4B000D7781B /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1681FB672370B4B000D7781B /* Kingfisher.framework */; };
+		1681FB692370B4B000D7781B /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1681FB672370B4B000D7781B /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1681FB6B2370B71100D7781B /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681FB6A2370B71100D7781B /* Bindable.swift */; };
 		1694C77A236B683E006E6846 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694C779236B683E006E6846 /* Image.swift */; };
+		16A601892370579A0071F0F2 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A601882370579A0071F0F2 /* HTTPParameter.swift */; };
+		16A6018B237057B00071F0F2 /* URLQuerryItemEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6018A237057B00071F0F2 /* URLQuerryItemEncoder.swift */; };
+		16A6018D237057DA0071F0F2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6018C237057DA0071F0F2 /* APIError.swift */; };
+		16A6018F237057DE0071F0F2 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6018E237057DE0071F0F2 /* APIRequest.swift */; };
+		16A60191237057E40071F0F2 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A60190237057E40071F0F2 /* APIResponse.swift */; };
+		16A60195237058390071F0F2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A60194237058390071F0F2 /* Result.swift */; };
+		16A6019723705AC70071F0F2 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6019623705AC60071F0F2 /* APIClient.swift */; };
 		16C1B4F8235F9DC400BF3AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B4F7235F9DC400BF3AC6 /* AppDelegate.swift */; };
 		16C1B4FE235F9DC700BF3AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C1B4FD235F9DC700BF3AC6 /* Assets.xcassets */; };
 		16C1B504235F9DC700BF3AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C1B502235F9DC700BF3AC6 /* LaunchScreen.storyboard */; };
@@ -23,9 +33,6 @@
 		16C1B5352360E9AB00BF3AC6 /* CharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5342360E9AB00BF3AC6 /* CharactersListViewModel.swift */; };
 		16C1B5372360EA4B00BF3AC6 /* HasCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5362360EA4B00BF3AC6 /* HasCustomView.swift */; };
 		16C1B53A2360EB3700BF3AC6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B5392360EB3700BF3AC6 /* UIView+Extensions.swift */; };
-		16C1B53C2362616600BF3AC6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B53B2362616600BF3AC6 /* NetworkRequest.swift */; };
-		16C1B53E23633F0600BF3AC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B53D23633F0600BF3AC6 /* APIRequest.swift */; };
-		16C1B54023633F1600BF3AC6 /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1B53F23633F1600BF3AC6 /* APIResource.swift */; };
 		16F7DD722368B6270030F726 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F7DD6E2368802D0030F726 /* CryptoSwift.framework */; };
 		16F7DD732368B6270030F726 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16F7DD6E2368802D0030F726 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16F7DD742368B6270030F726 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */; };
@@ -33,7 +40,7 @@
 		16F7DD762368B6270030F726 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; };
 		16F7DD772368B6270030F726 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16F7DD7C2369ED800030F726 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD7B2369ED800030F726 /* Character.swift */; };
-		16F7DD7E2369EDC60030F726 /* DataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD7D2369EDC60030F726 /* DataWrapper.swift */; };
+		16F7DD7E2369EDC60030F726 /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD7D2369EDC60030F726 /* DataContainer.swift */; };
 		16F7DD802369EDD30030F726 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD7F2369EDD30030F726 /* Wrapper.swift */; };
 		16F7DD822369FAC30030F726 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD812369FAC30030F726 /* CharacterTableViewCell.swift */; };
 		16F7DD842369FF820030F726 /* CharacterTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DD832369FF820030F726 /* CharacterTableViewCellViewModel.swift */; };
@@ -58,6 +65,7 @@
 			files = (
 				16F7DD772368B6270030F726 /* SnapKit.framework in Embed Frameworks */,
 				16F7DD752368B6270030F726 /* RxSwift.framework in Embed Frameworks */,
+				1681FB692370B4B000D7781B /* Kingfisher.framework in Embed Frameworks */,
 				16F7DD732368B6270030F726 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -66,8 +74,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1694C777236B667E006E6846 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		1681FB672370B4B000D7781B /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		1681FB6A2370B71100D7781B /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		1694C779236B683E006E6846 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		16A601882370579A0071F0F2 /* HTTPParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
+		16A6018A237057B00071F0F2 /* URLQuerryItemEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQuerryItemEncoder.swift; sourceTree = "<group>"; };
+		16A6018C237057DA0071F0F2 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		16A6018E237057DE0071F0F2 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIRequest.swift; path = "../../../../../../Downloads/SoftDesign-MarvelHeroes-master/MarvelHeroes/Models/APIRequest.swift"; sourceTree = "<group>"; };
+		16A60190237057E40071F0F2 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		16A60192237057EA0071F0F2 /* GetHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeroes.swift; sourceTree = "<group>"; };
+		16A60194237058390071F0F2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		16A6019623705AC60071F0F2 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		16C1B4F4235F9DC400BF3AC6 /* MarvelCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C1B4F7235F9DC400BF3AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C1B4FD235F9DC700BF3AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,12 +105,9 @@
 		16C1B5342360E9AB00BF3AC6 /* CharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModel.swift; sourceTree = "<group>"; };
 		16C1B5362360EA4B00BF3AC6 /* HasCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCustomView.swift; sourceTree = "<group>"; };
 		16C1B5392360EB3700BF3AC6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		16C1B53B2362616600BF3AC6 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		16C1B53D23633F0600BF3AC6 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		16C1B53F23633F1600BF3AC6 /* APIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
 		16F7DD6E2368802D0030F726 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		16F7DD7B2369ED800030F726 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		16F7DD7D2369EDC60030F726 /* DataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWrapper.swift; sourceTree = "<group>"; };
+		16F7DD7D2369EDC60030F726 /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
 		16F7DD7F2369EDD30030F726 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		16F7DD812369FAC30030F726 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		16F7DD832369FF820030F726 /* CharacterTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -106,6 +120,7 @@
 			files = (
 				16F7DD762368B6270030F726 /* SnapKit.framework in Frameworks */,
 				16F7DD742368B6270030F726 /* RxSwift.framework in Frameworks */,
+				1681FB682370B4B000D7781B /* Kingfisher.framework in Frameworks */,
 				16F7DD722368B6270030F726 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +135,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161EE2AD23723EC30049A062 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		1681FB652370A54B00D7781B /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				16A60192237057EA0071F0F2 /* GetHeroes.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		16C1B4EB235F9DC400BF3AC6 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +176,7 @@
 				16C1B5382360EB2100BF3AC6 /* Extensions */,
 				16F7DD7A2369ED6C0030F726 /* Models */,
 				16C1B52A2360DFA100BF3AC6 /* Scenes */,
+				1681FB652370A54B00D7781B /* Requests */,
 				16C1B5222360D30100BF3AC6 /* Source */,
 				16C1B4F7235F9DC400BF3AC6 /* AppDelegate.swift */,
 				16C1B4FD235F9DC700BF3AC6 /* Assets.xcassets */,
@@ -167,6 +198,7 @@
 		16C1B51A2360CD9500BF3AC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1681FB672370B4B000D7781B /* Kingfisher.framework */,
 				16F7DD6E2368802D0030F726 /* CryptoSwift.framework */,
 				16C1B51B2360CD9500BF3AC6 /* RxSwift.framework */,
 				16C1B51C2360CD9500BF3AC6 /* SnapKit.framework */,
@@ -177,13 +209,17 @@
 		16C1B5222360D30100BF3AC6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				16A6019623705AC60071F0F2 /* APIClient.swift */,
+				16A60194237058390071F0F2 /* Result.swift */,
+				16A6018C237057DA0071F0F2 /* APIError.swift */,
+				16A6018E237057DE0071F0F2 /* APIRequest.swift */,
+				16A60190237057E40071F0F2 /* APIResponse.swift */,
+				16A6018A237057B00071F0F2 /* URLQuerryItemEncoder.swift */,
+				16A601882370579A0071F0F2 /* HTTPParameter.swift */,
 				16C1B5232360D31200BF3AC6 /* Coordinator.swift */,
 				16C1B5252360D32C00BF3AC6 /* Navigator.swift */,
 				16C1B5362360EA4B00BF3AC6 /* HasCustomView.swift */,
-				16C1B53B2362616600BF3AC6 /* NetworkRequest.swift */,
-				16C1B53D23633F0600BF3AC6 /* APIRequest.swift */,
-				16C1B53F23633F1600BF3AC6 /* APIResource.swift */,
-				1694C777236B667E006E6846 /* ImageRequest.swift */,
+				1681FB6A2370B71100D7781B /* Bindable.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -200,6 +236,7 @@
 		16C1B52A2360DFA100BF3AC6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				161EE2AD23723EC30049A062 /* Character */,
 				16C1B52F2360E97400BF3AC6 /* Characters List */,
 				16C1B52B2360DFB900BF3AC6 /* AppRootViewController.swift */,
 			);
@@ -238,7 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				16F7DD7B2369ED800030F726 /* Character.swift */,
-				16F7DD7D2369EDC60030F726 /* DataWrapper.swift */,
+				16F7DD7D2369EDC60030F726 /* DataContainer.swift */,
 				16F7DD7F2369EDD30030F726 /* Wrapper.swift */,
 				1694C779236B683E006E6846 /* Image.swift */,
 			);
@@ -354,6 +391,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -372,24 +410,29 @@
 			files = (
 				16C1B5372360EA4B00BF3AC6 /* HasCustomView.swift in Sources */,
 				16C1B5312360E99500BF3AC6 /* CharactersListViewController.swift in Sources */,
-				16C1B53E23633F0600BF3AC6 /* APIRequest.swift in Sources */,
+				16A6018F237057DE0071F0F2 /* APIRequest.swift in Sources */,
 				16C1B52C2360DFB900BF3AC6 /* AppRootViewController.swift in Sources */,
-				16C1B54023633F1600BF3AC6 /* APIResource.swift in Sources */,
+				16A6018D237057DA0071F0F2 /* APIError.swift in Sources */,
+				16A60191237057E40071F0F2 /* APIResponse.swift in Sources */,
 				16C1B4F8235F9DC400BF3AC6 /* AppDelegate.swift in Sources */,
+				1681FB662370B24200D7781B /* GetHeroes.swift in Sources */,
 				16C1B5262360D32C00BF3AC6 /* Navigator.swift in Sources */,
 				1694C77A236B683E006E6846 /* Image.swift in Sources */,
-				16F7DD7E2369EDC60030F726 /* DataWrapper.swift in Sources */,
+				1681FB6B2370B71100D7781B /* Bindable.swift in Sources */,
+				16F7DD7E2369EDC60030F726 /* DataContainer.swift in Sources */,
 				16F7DD842369FF820030F726 /* CharacterTableViewCellViewModel.swift in Sources */,
-				1694C778236B667E006E6846 /* ImageRequest.swift in Sources */,
 				16C1B5352360E9AB00BF3AC6 /* CharactersListViewModel.swift in Sources */,
+				16A6019723705AC70071F0F2 /* APIClient.swift in Sources */,
 				16F7DD802369EDD30030F726 /* Wrapper.swift in Sources */,
+				16A601892370579A0071F0F2 /* HTTPParameter.swift in Sources */,
+				16A60195237058390071F0F2 /* Result.swift in Sources */,
 				16C1B53A2360EB3700BF3AC6 /* UIView+Extensions.swift in Sources */,
 				16F7DD822369FAC30030F726 /* CharacterTableViewCell.swift in Sources */,
 				16C1B5292360DF6A00BF3AC6 /* AppCoordinator.swift in Sources */,
+				16A6018B237057B00071F0F2 /* URLQuerryItemEncoder.swift in Sources */,
 				16C1B5332360E9A000BF3AC6 /* CharactersListView.swift in Sources */,
 				16C1B5242360D31200BF3AC6 /* Coordinator.swift in Sources */,
 				16F7DD7C2369ED800030F726 /* Character.swift in Sources */,
-				16C1B53C2362616600BF3AC6 /* NetworkRequest.swift in Sources */,
 				16C1B52E2360E73100BF3AC6 /* CharactersListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
